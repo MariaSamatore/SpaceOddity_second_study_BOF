@@ -1,0 +1,19 @@
+<h3>Gameplay Video</h3>
+
+<p>You will soon be playing Space Oddity. Please watch the following 20-second gameplay video before continuing.</p>
+
+<video controls style="width: 940px; height: 530px" autoplay onended="watchedVideo()">
+    <source src="{{ url_for('SpaceOddity.static', filename='SpaceOddity_Gameplay.mp4') }}" type="video/mp4">
+</video>
+
+<script>
+    $(document).ready(function() {
+        var btnNext = document.getElementById('btnNext');
+        btnNext.disabled = true;
+    });
+
+    function watchedVideo() {
+        var btnNext = document.getElementById('btnNext');
+        btnNext.disabled = false;
+    }
+</script>

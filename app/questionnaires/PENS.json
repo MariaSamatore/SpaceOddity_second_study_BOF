@@ -1,0 +1,59 @@
+{
+    "title":"PENS",
+    "code":"",
+    "questions":[
+      {
+        "questiontype": "radiogrid",
+        "instructions": "For the following statements, please reflect on your experience playing Space Oddity (the game you played for this study) and rate your agreement accordingly. Please answer these questions to the best of your ability.",
+        "id": "radio_1",
+        "shuffle": "true",
+        "labels": [
+          "Not at all true",
+          "",
+          "",
+          "Somewhat true",
+          "",
+          "",
+          "Very true"
+        ],
+        "q_text": [
+          {
+            "id": "q_1",
+            "text": " I feel competent at the game. "
+          },
+          {
+            "id": "q_2",
+            "text": " I feel very capable and effective when playing. "
+          },
+          {
+            "id": "q_3",
+            "text": " My ability to play the game is well matched with the game's challenges. "
+          },
+          {
+            "id": "q_4",
+            "text": " The game provides me with interesting options and choices. "
+          },
+          {
+            "id": "q_5",
+            "text": " The game lets you do interesting things. "
+          },
+          {
+            "id": "q_6",
+            "text": " I experienced a lot of freedom in the game. "
+          },
+          {
+            "id": "q_7",
+            "text": " I find the relationships I form in this game fulfilling. "
+          },
+          {
+            "id": "q_8",
+            "text": " I find the relationships I form in this game important. "
+          },
+          {
+            "id": "q_9",
+            "text": " I don't feel close to other players. "
+          }
+        ]
+      }
+    ]
+}

@@ -1,0 +1,173 @@
+{  
+    "title":"Demographics",
+    "code":"",
+    "questions":[
+        {  
+            "questiontype": "num_field",
+            "datatype": "integer",
+            "instructions": "What is your age?",
+            "id": "age",
+            "required":"true",
+            "placeholder": "18",
+            "min":"1",
+            "max":"120"
+        },
+        {
+            "questiontype": "drop_down",
+            "instructions": "Indicate your gender:",
+            "id": "gender",
+            "dropheight": "78",
+            "required": "false",
+            "items": [
+              "woman",
+              "man",
+              "non-binary",
+              "Prefer not to disclose",
+              "Prefer to self describe"
+            ]
+        },
+        {
+            "questiontype": "field",
+            "instructions": "Self-describe your gender, if applicable:",
+            "id": "gender_self_described"
+        },
+        {
+            "questiontype": "drop_down",
+            "instructions": "Please indicate how often (on average) you play games:",
+            "id": "gamer_rate",
+            "required": "true",
+            "items": [
+              "Every day",
+              "A few times per week",
+              "A few times per month",
+              "A few times per year",
+              "Never"
+            ]
+        },
+        {
+              "questiontype": "drop_down",
+              "instructions": "If you played games more or less in the past, please indicate how often you used to play:",
+              "id": "former_gamer_rate",
+              "items": [
+                "Every day",
+                "A few times per week",
+                "A few times per month",
+                "A few times per year",
+                "Never"
+            ]
+        },
+        {
+            "questiontype": "slider",
+            "instructions": "How much do you self-identify as a gamer on the following scale:",
+            "id": "gamer_identity",
+            "required": "true",
+            "left": "not at all",
+            "right": "gamer",
+            "tick_count": 10
+        },
+        {
+            "questiontype":"checklist",
+            "instructions":"Please indicate the genres that you enjoy playing:",
+            "id":"genre",
+            "shuffle":false,
+            "questions": [
+                {
+                    "id":"action",
+                    "text":"Action"
+                },
+                {
+                    "id":"platform",
+                    "text":"Platform games"
+                },
+                {
+                    "id":"fps",
+                    "text":"First Person Shooter"
+                },
+                {
+                    "id":"beu",
+                    "text":"Beat 'em up"
+                },
+                {
+                    "id":"adventure",
+                    "text":"Adventure"
+                },
+                {
+                    "id":"rpg",
+                    "text":"Role Playing Games"
+                },
+                {
+                    "id":"mmorpg",
+                    "text":"Mass Multiplayer Role Playing Games (MMORPG)"
+                },
+                {
+                    "id":"sim",
+                    "text":"Simulation"
+                },
+                {
+                    "id":"vsim",
+                    "text":"Vehicle simulation"
+                },
+                {
+                    "id":"strategy",
+                    "text":"Strategy"
+                },
+                {
+                    "id":"music",
+                    "text":"Music games"
+                },
+                {
+                    "id":"puzzle",
+                    "text":"Puzzle games"
+                },
+                {
+                    "id":"sport",
+                    "text":"Sport games"
+                },
+                {
+                    "id":"moba",
+                    "text":"Multiplayer Online Battle Arena (MOBA)"
+                },
+                {
+                    "id":"casual",
+                    "text":"Casual games"
+                },
+                {
+                    "id":"battleRoyale",
+                    "text":"Battle Royale"
+                }]
+        },
+        {
+            "questiontype": "radiolist",
+            "instructions": "Did you play Space Oddity with sound on?",
+            "id": "play_with_sound",
+            "required": "true",
+            "labels": [
+              "Yes",
+              "Yes, but I could not hear the sound well",
+              "I do not remember",
+              "No"
+            ]
+        },
+        {
+            "questiontype":"multi_field",
+            "instructions":"Do you have any feedback related to the study?",
+            "placeholder":"study feedback",
+            "id":"study_feedback",
+            "height":  "100"
+        },
+        {
+            "questiontype": "multi_field",
+            "instructions": "Do you have any feedback related to the game?",
+            "placeholder": "game feedback",
+            "id": "game_feedback",
+            "height": "100"
+        },
+        {
+            "questiontype": "multi_field",
+            "instructions": "Did you face any technical problems during the study? If yes, please describe below.",
+            "placeholder": "technical feedback",
+            "id": "technical_feedback",
+            "height": "100"
+        }
+    ]
+}
