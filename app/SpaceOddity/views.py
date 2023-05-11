@@ -97,3 +97,33 @@ def game_data():
     return ""
 
 
+@SpaceOddity.route("/task_sam", methods=['GET', 'POST']) #This is for the pre game SAM
+@SpaceOddity.route("/task_sam2", methods=['GET', 'POST']) #This is for the post game SAM
+@verify_session_valid
+@verify_correct_page
+def self_assessment_manikin():
+    return render_template("task_sam.html")
+
+
+@SpaceOddity.route("/log_sam", methods=['POST'])
+def log_sam():
+    print(request.referrer)
+
+    message = request.form['message']
+    if message == "logSAM":
+        log_entry = db.LogSAM()
+        pid = request.form['pid']
+        #if db.session.query(db.LogSAM).filter(db.LogSAM.participantID == pid).first() is not None:
+        #    print("There is already a SAM db entry for pid={pid}".format(pid=pid))
+        #    return ""
+        log_entry.participantID = session['participantID']
+        log_entry.participantID = pid
+        log_entry.arousal = request.form['arousal']
+        log_entry.valence = request.form['valence']
+        log_entry.dominance = request.form['dominance']
+        log_entry.referrer = request.referrer
+
+        db.session.add(log_entry)
+        db.session.commit()
+    return ""
+

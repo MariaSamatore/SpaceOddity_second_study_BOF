@@ -1,0 +1,60 @@
+{
+    "title":"Domain SE",
+    "code":"",
+    "questions":[
+      {
+        "questiontype": "radiogrid",
+        "instructions": "For the following statements, please reflect on your typical experience playing video games and rate your agreement accordingly. ",
+        "id": "radio_1",
+        "shuffle": "true",
+        "labels": [
+          "Not at all true",
+          "",
+          "",
+          "Exactly true"
+        ],
+        "q_text": [
+          {
+            "id": "q_1",
+            "text": " I can always manage to solve difficult problems within a video game if I try hard enough. "
+          },
+          {
+            "id": "q_2",
+            "text": " In a video game, if something/someone opposes me, I can find the means and ways to get what I want. "
+          },
+          {
+            "id": "q_3",
+            "text": " It is easy for me to stick to my aims and accomplish my goals in a video game. "
+          },
+          {
+            "id": "q_4",
+            "text": " I am confident that I could deal efficiently with unexpected events in a video game. "
+          },
+          {
+            "id": "q_5",
+            "text": " Thanks to my resourcefulness, I know how to handle unforeseen situations in a video game. "
+          },
+          {
+            "id": "q_6",
+            "text": " I can solve most problems in a video game if I invest the necessary effort.  "
+          },
+          {
+            "id": "q_7",
+            "text": " I can remain calm when facing difficulties in a video game because I can rely on my coping abilities. "
+          },
+          {
+            "id": "q_8",
+            "text": " When I am confronted with a problem in a video game, I can usually find several solutions. "
+          },
+          {
+            "id": "q_9",
+            "text": " If I am in trouble in a video game, I can usually think of a solution. "
+          },
+          {
+            "id": "q_10",
+            "text": " I can usually handle whatever comes my way in a video game. "
+          }
+        ]
+      }
+    ]
+}

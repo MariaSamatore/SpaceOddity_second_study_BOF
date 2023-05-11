@@ -1,0 +1,39 @@
+{
+    "title":"CORGIS-Performative Challenge",
+    "code":"",
+    "questions":[
+      {
+        "questiontype": "radiogrid",
+        "instructions": "Please indicate to what extent you agree/disagree with each of the statements regarding the game you just played. ",
+        "id": "radio_1",
+        "shuffle": "true",
+        "labels": [
+          "Strongly Disagree",
+          "Disagree",
+          "Slightly Disagree",
+          "Neither Agree Nor Disagree",
+          "Slightly Agree",
+          "Agree",
+          "Strongly Agree"
+        ],
+        "q_text": [
+          {
+            "id": "q_1",
+            "text": " I had to react quickly when playing the game. "
+          },
+          {
+            "id": "q_2",
+            "text": " I had to act quickly when playing the game. "
+          },
+          {
+            "id": "q_3",
+            "text": " Thinking fast was an important part of the game. "
+          },
+          {
+            "id": "q_4",
+            "text": " Quickly responding to things that I saw was an important part of the game. "
+          }
+        ]
+      }
+    ]
+}
