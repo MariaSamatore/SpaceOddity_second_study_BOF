@@ -36,16 +36,33 @@
                 instrValence.fadeIn(500);
             }
 
-            function finish() {
+            //function finish() {
+            //    //document.getElementById('form').submit();
+            //    $.post( "/log_sam", {
+            //        "message": "logSAM",
+            //        "pid": String({{ session['participantID'] }}),
+            //        "valence": $("#valence").val(),
+            //        "arousal": $("#arousal").val(),
+            //        "dominance": $("#dominance").val(),
+            //    });
+            //    window.location.href = "/redirect_next_page";
+            //}
+
+            async function finish() {
                 //document.getElementById('form').submit();
-                $.post( "/log_sam", {
-                    "message": "logSAM",
-                    "pid": String({{ session['participantID'] }}),
-                    "valence": $("#valence").val(),
-                    "arousal": $("#arousal").val(),
-                    "dominance": $("#dominance").val(),
-                });
-                window.location.href = "/redirect_next_page";
+
+                try {
+                    await $.post("/log_sam", {
+                        "message": "logSAM",
+                        "pid": String({{ session['participantID'] }}),
+                        "valence": $("#valence").val(),
+                        "arousal": $("#arousal").val(),
+                        "dominance": $("#dominance").val(),
+                    });
+                    window.location.href = "/redirect_next_page";
+                    }   catch (err) {
+                            console.error("Something went wrong:", err);
+                        }
             }
 
             var arousal = $("#arousal");
