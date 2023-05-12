@@ -118,8 +118,8 @@ def log_sam():
         #    return ""
         log_entry.participantID = session['participantID']
         log_entry.participantID = pid
-        log_entry.arousal = request.form['arousal']
-        log_entry.valence = request.form['valence']
+        #log_entry.arousal = request.form['arousal']
+        #log_entry.valence = request.form['valence']
         log_entry.dominance = request.form['dominance']
         log_entry.referrer = request.referrer
 
